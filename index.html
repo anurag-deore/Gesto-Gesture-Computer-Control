@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electron App</title>
+  </head>
+
+  <body>
+    <section id="demos" class="invisible">
+      <div id="liveView" class="videoView">
+        <button id="webcamButton" class="mdc-button mdc-button--raised">
+          <span class="mdc-button__ripple"></span>
+          <span class="mdc-button__label">ENABLE WEBCAM</span>
+        </button>
+        <div>
+          <video
+            id="webcam"
+            autoplay
+            playsinline
+            style="
+              width: 100vw;
+              height: 100vh;
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              z-index: -1;
+            "
+          ></video>
+          <canvas
+            class="output_canvas"
+            id="output_canvas"
+            style="
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              width: 100vw;
+              height: 100vh;
+              z-index: -1;
+            "
+          ></canvas>
+          <p id="gesture_output" class="output"></p>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="hand-track.js"></script>
+  </body>
+</html>
