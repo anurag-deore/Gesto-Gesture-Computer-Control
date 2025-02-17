@@ -70,7 +70,7 @@ npm start
 
 ## Demo
 
-<video src="https://vimeo.com/1057622895/0dfcfeeb62"></video>
+Check out my video on Vimeo: [Watch the Demo](https://vimeo.com/1057622895/0dfcfeeb62)
 
 ## Dependencies
 
